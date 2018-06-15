@@ -3,27 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>Cifrado Cesar</title>
-  </head>
-  <body>
-    <h1>CIFRADO CÉSAR</h1>
-    <script type="text/javascript" src= 'js/app.js'></script>
-<h1 id= textIn> <form>Ingresa tu texto: <br></h1>
-
-  <input id='ingresar'  type='text' name='cajota'><br>
-  <input type="button" value="Codificate" onclick="papita()"> <br>
+</head>
+<body>
+    <h1>CIFRADO CÉSAR</h1><br>
+    <script type="text/javascript" src= 'JS/app.js'></script>
+    <br>
 
 <div>
-   <h2>Este es tú cifrado César</h2>
-   <p id='b'> </p>
+  <h2 id= key> <form>Ingresa tu número <em>key</em><br></h2>
+  <input id='introKey'  type='text' name='caja'><br>
+  <input type="button" value="Key-Num" onclick="encode(); decode()"> <br>
+</div>
+<br>
+
+<div>
+<h2 id= textIn> <form>Ingresa tu texto a cifrar. <br></h2>
+  <input id='ingresar'  type='text' name='cajota'><br>
+  <input type="button" value="Codificate" onclick="encode()"> <br>
 </div>
 
-<h2> TransFormers </h2>
-	<input id='crip'  type='text' name='cajita'><br>
-  <input type="button" value="Decodificate" onclick="repapita()"> <br>
-
 <div>
-  <p id = 'crip'><p>
-	<p id='hhh'></P>
+   <h2>Este es tú texto cifrado:</h2><br>
+   <p id='b'> </p>
+ </div>
+<br>
+
+<h2> Ingresa tu texto cifrado. </h2>
+<div>
+  <input id='crip'  type='text' name='cajita'><br>
+  <input type="button" value="Decodificate" onclick="decode()"><br>
+</div>
+
+<br>
+<div>
+  <h2>Este es tú texto decifrado:</h2><br>
+  <p id='hhh'></P>
 </div>
 
 </body>
